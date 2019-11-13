@@ -6,10 +6,7 @@ fn main() {
         "37i9dQZEVXbJiZcmkrIHGU", // GERMANY
         "6VZ7JY80Iy1wy7GF076AMo", // NORWAY
     ];
-    let spotify = auth_spotify(
-        "bdc290d512784333abc082541a6348d7",
-        "67e78eac5ac24b1eac0983cd440d9669",
-    );
+    let spotify = auth_spotify("ex", "example");
     for playlist in top_50 {
         if let Ok(res) = get_genres_for_playlist(&spotify, playlist) {
             let str: Vec<String> = res.iter().map(|p| format!("{}: {}", p.0, p.1)).collect();
