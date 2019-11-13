@@ -4,6 +4,8 @@ use rspotify::spotify::oauth2::SpotifyClientCredentials;
 use std::collections::HashMap;
 use std::error::Error;
 
+/// Authenticates a `Spotify` client with the spotify api.
+/// `client_id` and `client_secret` can be gathered from spotify's developer workspace by registering an app.
 pub fn auth_spotify(client_id: &str, client_secret: &str) -> Spotify {
     let client_credential = SpotifyClientCredentials::default()
         .client_id(client_id)
@@ -15,6 +17,9 @@ pub fn auth_spotify(client_id: &str, client_secret: &str) -> Spotify {
         .build()
 }
 
+/// Calculates a histogram of the genres in the playlist with id `playlist`.
+/// Returns a vector of pairs (genre_name: `String`, amount: `u64`).
+/// Needs a `Spotify` client.
 pub fn get_genres_for_playlist(
     client: &Spotify,
     playlist: &str,
