@@ -1,7 +1,7 @@
 [package]
 name = "spotify-genres"
 description = "analysing the genres of tracks in a spotify playlist"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Jonas Geschke <mail@yonny.de>"]
 edition = "2018"
 repository = "https://github.com/kegesch/spotify-genres-rs"
