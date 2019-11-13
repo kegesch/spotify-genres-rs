@@ -6,7 +6,7 @@ authors = ["Jonas Geschke <mail@yonny.de>"]
 edition = "2018"
 repository = "https://github.com/kegesch/spotify-genres-rs"
 license = "MIT"
-documentation = "https://github.com/kegesch/spotify-genres-rs/docs"
+documentation = "https://github.com/kegesch/spotify-genres-rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
